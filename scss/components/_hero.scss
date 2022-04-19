@@ -1,0 +1,50 @@
+.hero {
+    position: relative;
+    background: linear-gradient(349.47deg, rgba(32, 59, 131, 0.9) 31.24%, rgba(83, 152, 255, 0.9) 84.32%);
+    padding: 4.75rem 1rem 3.25rem;
+
+    &-cont {
+        text-align: center;
+        h1 {
+            font-size: clamp(1.5rem, 5vw, 2.25rem);
+            line-height: 1.1em;
+            font-weight: 700;
+        }
+        h1,
+        h2 {
+            color: #fff;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            line-height: 1.1719em;
+            font-weight: 300;
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .hero {
+        min-height: 360px;
+        background: 25% top url(../media/b-hero.jpg);
+        background-size: cover !important;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+
+        &-cont {
+            h1 {
+                max-width: 30ch;
+                margin: 0 auto;
+            }
+            h2 {
+                max-width: 70ch;
+                margin: 0 auto;
+                .salto-de-linea {
+                    display: inline;
+                }
+            }
+        }
+    }
+}

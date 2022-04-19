@@ -1,0 +1,12 @@
+.cont-w-side-r {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 767px) {
+    .cont-w-side-r {
+        display: grid;
+        grid-template-columns: auto 212px;
+        gap: 2rem;
+    }
+}

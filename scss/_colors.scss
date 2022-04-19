@@ -1,0 +1,57 @@
+$primary: #ff266e;
+$primary-dark: #ec125b;
+$primary-invert: #ffffff;
+$medicina: #0055a2;
+$medicina-dark: #02204d;
+$medicina-light: #00b6de;
+$medicina-invert: #ffffff;
+$enfermeria: #008066;
+$enfermeria-invert: #ffffff;
+$bibliografia: #f09146;
+$bibliografia-invert: #ffffff;
+$actualidad: #5398ff;
+$actualidad-invert: #ffffff;
+$e-health: #a0cf67;
+$e-health-invert: #ffffff;
+$fuera-de-guardia: #16c8a4;
+$fuera-de-guardia-invert: #ffffff;
+$black-light: #575757;
+$black: #272727;
+$ccc: #ccc;
+.background-primary {
+    background-color: $primary;
+    color: #fff;
+}
+
+$colores: ( "primary": $primary, "primary-dark": $primary-dark, "medicina": $medicina, "medicina-dark": #203b83, "enfermeria": $enfermeria, "bibliografia": $bibliografia, "actualidad": $actualidad, "e-health": $e-health, "f-d-guardia": $fuera-de-guardia, "filtro-tienda": #fff, "ccc": $ccc, );
+@each $name,
+$color in $colores {
+    .background-#{$name} {
+        background-color: $color;
+        color: #fff;
+        &:hover {
+            background: rgba($color, 0.75);
+        }
+    }
+    .btn-#{$name} {
+        background-color: $color !important;
+        color: #fff;
+        &:hover {
+            background: rgba($color, 0.75);
+        }
+        &.outlined {
+            background-color: transparent !important;
+            color: $color;
+            border: 1px solid $color;
+        }
+        &.simple {
+            background-color: transparent !important;
+            color: $color;
+            border: transparent solid $color;
+        }
+    }
+}
+
+.background-filtro-tienda {
+    color: $black-light;
+}

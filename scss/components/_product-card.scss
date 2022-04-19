@@ -1,0 +1,84 @@
+@import "../_colors";
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    &-img {
+        box-sizing: border-box;
+        min-height: 152px;
+        background-blend-mode: multiply;
+        background-position: center !important;
+        background-size: cover !important;
+        padding: 0.5rem;
+        //TAGS
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        column-gap: 0.5rem;
+    }
+    &-info {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        &-sup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem 0.5rem 0;
+            column-gap: 0.5rem;
+            font-size: 0.625rem;
+            text-transform: uppercase;
+            .area {
+                max-width: 22ch;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .horas {
+                display: flex;
+                align-items: center;
+                i {
+                    font-size: 10px;
+                    margin-right: 2px;
+                }
+            }
+        }
+        &-title {
+            padding: 1rem;
+            flex-grow: 1;
+            font-size: 1rem;
+            line-height: 19px;
+            font-weight: 700;
+            text-align: center;
+            color: $medicina-dark;
+        }
+        &-footer {
+            display: flex;
+            justify-content: space-between;
+            height: max-content;
+            padding: 14px 1rem;
+            border-top: 1px solid #eeeeee;
+            &-precio {
+                height: max-content;
+                color: $medicina-dark;
+                .cuotas {
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin-bottom: 2px;
+                }
+                .price {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 1;
+                }
+            }
+            .btn {
+                height: auto;
+            }
+        }
+    }
+}

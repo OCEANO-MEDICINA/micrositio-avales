@@ -1,0 +1,60 @@
+// NAVBAR
+
+header {
+    position: absolute;
+    width: 100%;
+
+    .navbar {
+        justify-content: center;
+        position: relative;
+        z-index: 100;
+        padding: 1rem 0 0;
+        background: transparent;
+
+        // LOGO
+        &-brand {
+            position: relative;
+            z-index: 102;
+            justify-content: center;
+            .logo {
+                padding: 0;
+            }
+            img {
+                height: 35px;
+                max-height: unset;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        .navbar {
+            &-brand {
+                align-items: center;
+                .logo {
+                    position: relative;
+                    top: unset;
+                    left: unset;
+                    transform: unset;
+
+                    img {
+                        height: 45px;
+                    }
+                }
+                .icons {
+                    display: none;
+                }
+            }
+
+            .accordion-panel {
+                max-height: 0;
+                overflow: unset;
+            }
+
+            .accordion-trigger:hover ~ .accordion-panel {
+                opacity: 1;
+            }
+        }
+    }
+}

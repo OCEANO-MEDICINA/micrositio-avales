@@ -1,0 +1,41 @@
+.grid-w-side {
+    position: relative;
+    &-cont {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .grid-w-side {
+        &-cont {
+            grid-template-columns: minmax(auto, 224px) auto;
+            column-gap: 24px;
+
+            &-filtros {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1.5rem;
+                position: sticky;
+                height: max-content;
+                top: 1rem;
+                padding: 1rem;
+                background-color: #f0f0f080;
+                border-radius: 10px;
+
+                &-group {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1445px) {
+    .grid-w-side {
+        &-cont {
+            grid-template-columns: minmax(auto, 314px) auto;
+        }
+    }
+}

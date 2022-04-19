@@ -1,0 +1,32 @@
+.banner {
+    &-cont {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        .swiper-banner {
+            position: relative;
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .banner {
+        margin-bottom: 2rem;
+
+        &-cont {
+            width: $width-container;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .swiper-banner {
+                aspect-ratio: 6/1;
+            }
+            img {
+                aspect-ratio: 6/1;
+            }
+        }
+    }
+}

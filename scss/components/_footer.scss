@@ -1,0 +1,382 @@
+@import "../_colors";
+
+$width-container: unquote("min(100% - 3.25rem, 960px - 64px)");
+
+.footer {
+    background-color: $black;
+    padding: 2rem 0 1.75rem;
+
+    &-cont {
+        display: flex;
+        flex-flow: row wrap;
+        row-gap: 1.5rem;
+        width: $width-container;
+        font-size: 0.75rem;
+
+        &-first,
+        &-second,
+        &-third {
+            flex-grow: 1;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            row-gap: 1rem;
+
+            a {
+                color: #fff;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $primary;
+                }
+            }
+        }
+        &-third {
+            flex-flow: row wrap-reverse;
+            p {
+                color: #fff;
+                font-size: 0.625rem;
+            }
+        }
+    }
+
+    &-info,
+    &-menu,
+    &-redes,
+    &-newsletter {
+        flex-grow: 1;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    &-info {
+        column-gap: 1rem;
+
+        img {
+            height: 54px;
+        }
+
+        &-contact {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                display: inherit;
+                column-gap: 0.5rem;
+            }
+        }
+    }
+
+    &-newsletter {
+        color: #fff;
+
+        h5 {
+            font-weight: 700;
+        }
+        .mail-form {
+            width: 100%;
+            margin-top: 1rem;
+            position: relative;
+
+            form {
+                p {
+                    display: flex;
+                    flex-flow: row wrap;
+
+                    .email-367 {
+                        height: max-content;
+                        max-width: 75%;
+                    }
+                    .acceptance-848 {
+                        margin-top: 0.75rem;
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            column-gap: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            input[type="email"] {
+                padding: 0.5rem;
+                min-height: 2rem;
+                border-radius: 4px 0 0 4px;
+                border: none;
+                outline: none;
+                width: 100%;
+            }
+            .js-modal-trigger {
+                height: auto !important;
+                background-color: $primary;
+                border-radius: 0 4px 4px 0;
+                font-size: 1.25rem;
+                color: #fff;
+                cursor: pointer;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+
+    &-redes {
+        justify-content: center;
+        column-gap: 0.75rem;
+        svg {
+            height: 2rem;
+
+            &:hover {
+                path {
+                    fill: $primary;
+                }
+            }
+        }
+    }
+
+    &-certificados {
+        display: flex;
+        column-gap: 0.75rem;
+
+        &-cont {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            h6 {
+                font-size: 0.75rem;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+        }
+
+        img {
+            height: 2rem;
+        }
+
+        &.co {
+            .link-pago-co {
+                display: flex;
+                gap: 0.25rem;
+                border-left: 1px solid #c4c4c4;
+                padding-left: 0.5rem;
+            }
+            img {
+                height: 1.5rem;
+            }
+        }
+    }
+    span.wpcf7-form-control-wrap.recaptcha {
+        transform: scale(0.8) translateX(-12%);
+    }
+}
+
+#modal-newsletter {
+    .formulario {
+        &-campos {
+            border-top: 1px solid #57575740;
+            padding-top: 10px;
+        }
+        &-email {
+            &-cont {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .modal-card {
+        &-head {
+            padding-bottom: 0.75rem;
+        }
+        &-body {
+            padding-top: 0;
+
+            .verficacion {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+
+                .wpcf7-list-item {
+                    margin: 0;
+                }
+                input.button {
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        background-color: $black;
+        padding: 4rem 0 3.75rem;
+
+        &-cont {
+            row-gap: 2.5rem;
+
+            font-size: 0.875rem;
+
+            &-first,
+            &-second,
+            &-third {
+                flex-flow: row;
+                column-gap: 2rem;
+
+                a {
+                    color: #fff;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: $primary;
+                    }
+                }
+            }
+            &-first {
+                display: grid;
+                grid-template-columns: minmax(50%, 400px) 1fr;
+            }
+            input[type="email"] {
+                min-height: 2.625rem;
+            }
+            .js-modal-trigger {
+                padding: 0 0.75rem;
+            }
+            &-third {
+                justify-content: space-between;
+                align-items: flex-end;
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &-info,
+        &-menu,
+        &-redes,
+        &-newsletter {
+            flex-flow: row;
+        }
+
+        &-menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+        }
+
+        &-info {
+            justify-content: flex-start;
+            column-gap: 0.5rem;
+
+            img {
+                height: 66px;
+            }
+        }
+
+        &-newsletter {
+            flex-flow: column;
+
+            h5 {
+                font-size: 1rem;
+            }
+            .mail-form {
+                input[type="email"] {
+                    font-size: 15px;
+                }
+
+                .acceptance-848 {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-redes {
+            justify-content: flex-end;
+            svg {
+                height: 2.5rem;
+            }
+        }
+
+        &-certificados {
+            img {
+                height: 3rem;
+            }
+        }
+    }
+    #modal-newsletter {
+        .formulario {
+            &-campos {
+                border-top: 1px solid #57575740;
+                padding-top: 10px;
+            }
+            &-email {
+                &-cont {
+                    width: 100% !important;
+                }
+            }
+        }
+
+        .modal-card {
+            &-head {
+                padding-bottom: 0.75rem;
+            }
+            &-body {
+                padding-top: 0;
+
+                .formulario {
+                    &-campos {
+                        gap: 1.5rem;
+                        .button {
+                            max-width: 204px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        form {
+            .wpcf7-submit {
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $primary-dark;
+                }
+            }
+        }
+        &-cont {
+            &-third {
+                display: grid;
+                grid-template-columns: 1fr auto;
+            }
+        }
+
+        &-certificados {
+            justify-content: flex-end;
+            &-cont {
+                h6 {
+                    font-size: 1rem;
+
+                    margin-bottom: 1rem;
+                    text-align: right;
+                }
+            }
+            &.co {
+                .link-pago-co {
+                    gap: 1rem;
+                    padding-left: 1rem;
+                }
+                img {
+                    height: 2.5rem;
+                }
+            }
+        }
+    }
+}

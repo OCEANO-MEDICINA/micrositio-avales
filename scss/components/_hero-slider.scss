@@ -1,0 +1,128 @@
+.hero {
+    min-height: 200px;
+    position: relative;
+
+    .swiper-slide {
+        min-height: 52vw;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .searchbar-especialidad {
+        position: absolute;
+        z-index: 3;
+        display: flex;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: unquote("min(100% - 2rem, 34rem)");
+
+        .field {
+            width: 100%;
+            margin: 0;
+
+            .icon {
+                height: 100%;
+                width: 2em;
+            }
+        }
+        .accordion-panel {
+            position: absolute;
+            z-index: -1;
+            width: 99.8%;
+            left: 0;
+            bottom: 1rem;
+            padding-top: 1.5rem;
+            border: none;
+            background-color: #fff;
+            transform: translate(1px, 100%);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+
+            li {
+                border-bottom: 1px solid #eeeeee;
+            }
+        }
+        .accordion-trigger.active {
+            i {
+                transform: unset;
+            }
+        }
+        .accordion-trigger.active ~ .accordion-panel {
+            max-height: 200px !important;
+            overflow-y: scroll;
+        }
+
+        &-campo {
+            font-size: 0.75rem;
+            padding: 0.375rem;
+            height: max-content;
+            min-height: 2.25rem;
+        }
+        &-button {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .searchbar-especialidad {
+        position: relative;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+
+        &-campo {
+            position: relative;
+            font-size: 1.125rem;
+            padding-right: 6rem !important;
+            min-height: 46px;
+        }
+
+        &-button {
+            padding: 0 1rem;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            right: 0;
+            background-color: transparent;
+            font-size: 1rem;
+            line-height: 19px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $black-light;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+        .icon {
+            font-size: 1.25rem;
+
+            .mdi-chevron-right {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .hero {
+        min-height: 360px;
+        background-size: cover;
+
+        .swiper-slide {
+            min-height: 320px;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .hero {
+        .swiper-slide {
+            min-height: 360px;
+        }
+    }
+}
