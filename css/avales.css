@@ -3097,6 +3097,8 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
   background: linear-gradient(213.89deg, rgba(32, 59, 131, 0) -16.16%, #4173CD 57.82%);
 }
 .hero .filter-categories {
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
   display: flex;
   flex-flow: row;
   gap: 0.5rem;
@@ -3190,7 +3192,8 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
   z-index: 2;
 }
 .hero .avales-grid {
-  margin: -1rem 0;
+  width: calc(100% + 2rem);
+  margin: -1rem;
   display: grid;
   grid-auto-columns: clamp(6.375rem, 15vw, 8.75rem);
   grid-column-end: end;
@@ -3276,6 +3279,8 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
 .aval-info-extra {
   position: relative;
   flex-grow: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 1.25rem;
 }
 .aval-info-extra-overlay {
   position: absolute;
@@ -3732,8 +3737,13 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
   }
   .hero .filter-categories {
     flex-flow: row wrap;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
   }
   .hero .avales-grid {
+    width: calc(100% + 2rem);
+    gap: 0.75rem;
+    margin-left: -1rem;
     grid-template-columns: repeat(auto-fill, minmax(clamp(6.375rem, 15vw, 8.75rem), 1fr));
     grid-auto-flow: dense;
   }
@@ -3790,6 +3800,9 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
     display: inline;
   }
 
+  .formulario-3 {
+    margin-top: -2.5rem;
+  }
   .formulario-3-cont .formulario-bottom .verificacion {
     width: unset;
   }
@@ -3808,8 +3821,9 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
     margin-left: -2rem;
   }
   .hero .avales-grid {
-    padding: 2rem 2rem;
-    margin-left: -2rem;
+    padding: 2rem 3rem;
+    margin-left: -3rem;
+    width: calc(100% + 6rem);
   }
 
   .aval-related .cursos {
@@ -3825,7 +3839,7 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
     margin-top: -3.5rem;
     padding: 0 0 3.5rem;
     display: grid;
-    grid-template-columns: auto 510px;
+    grid-template-columns: auto 53%;
     gap: 2.5rem;
   }
   .aval-grid-section.section-left {
@@ -3880,16 +3894,23 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
     text-align: initial;
   }
 }
+.formulario-3 {
+  margin-bottom: 4rem;
+}
+
 @media screen and (min-width: 1445px) {
-  /*.hero {
-      &-cont {
-          width: 1250px !important;
-      }
-      .avales {
-          width: 1250px !important;
-      }
-  }*/
+  .contenedor {
+    width: 1250px !important;
+  }
+
+  .hero .avales-grid {
+    grid-template-columns: repeat(auto-fill, minmax(clamp(6.375rem, 15vw, 10.75rem), 1fr));
+  }
+  .hero .avales-card {
+    height: clamp(3rem, 15vw, 5rem);
+  }
+
   .aval-grid {
-    grid-template-columns: auto 710px;
+    grid-template-columns: auto 60%;
   }
 }/*# sourceMappingURL=avales.css.map */
