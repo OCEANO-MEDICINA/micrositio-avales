@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.4.95/css/materialdesignicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/avales.css">
 
@@ -22,7 +24,7 @@
     <div class="contenedor">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div id="navbar-overlay" class="navbar-overlay"></div>
-            <div class="navbar-brand">
+            <div class="navbar-brand" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="600">
                 <a id="logo" class="navbar-item logo absolute-center" href="#">
                     <img src="media/logo-oceano-medicina.png">
                 </a>
@@ -47,7 +49,7 @@
 
             </div>
 
-            <div id="navbar-oceano" class="navbar-menu">
+            <div id="navbar-oceano" class="navbar-menu" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="600">
                 <div class="navbar-start">
                     <div id="nav-medicina" class="navbar-item has-dropdown is-hoverable nav-medicina">
                         <a class="navbar-link accordion-trigger">
@@ -203,9 +205,10 @@
             <img src="media/aval-hero-m.jpg" alt="">
         </picture>
         <article class="hero-cont contenedor mx-auto">
-            <h1>Los mejores avales <span class="salto-de-linea"> para cursos 100% online</span></h1>
-            <h2><b>Propuesta de valor de Océano Medicina.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat.
+            <h1 data-aos="fade-left" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="800">Los mejores avales <span class="salto-de-linea"> para cursos 100% online</span></h1>
+            <h2 data-aos="fade-left" data-aos-easing="linear" data-aos-delay="700" data-aos-duration="800">
+                <b>Propuesta de valor de Océano Medicina.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
             </h2>
 
         </article>
@@ -239,11 +242,75 @@
                 <div class="avales-grid">
                     <a class="avales-card filter-item arg active">
                         <div class="avales-card-overlay"></div>
-                        <img src="media/avales/aval-colmed.svg" alt="" class="avales-card-img">
+                        <img src="media/avales/ACP_blanco.svg" alt="" class="avales-card-img">
                     </a>
                     <div class="avales-card filter-item arg">
                         <div class="avales-card-overlay"></div>
-                        <img src="media/avales/aval-socomeg.svg" alt="" class="avales-card-img">
+                        <img src="media/avales/AEP_blanco.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item col bol">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-esem.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item bol cl">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-nutricionistas.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item cl">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-amir.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item cl">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-afeme.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item cl">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-conamege.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item bo">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-udima.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item col">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-aureotec.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item arg">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/AEP_blanco.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item col bol">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-esem.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item bol cl">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-nutricionistas.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item cl">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-amir.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item cl">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-afeme.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item cl">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-conamege.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item bo">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-udima.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item col">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/aval-aureotec.svg" alt="" class="avales-card-img">
+                    </div>
+                    <div class="avales-card filter-item arg">
+                        <div class="avales-card-overlay"></div>
+                        <img src="media/avales/AEP_blanco.svg" alt="" class="avales-card-img">
                     </div>
                     <div class="avales-card filter-item col bol">
                         <div class="avales-card-overlay"></div>
@@ -286,7 +353,7 @@
 
                 <div class="filter-mask"></div>
             </div>
-            <p class="has-text-white" style="position:relative;z-index: 3;font-size: clamp(0.625rem,2vw,0.75rem);">Si queres formar parte de nuestra oferta, <a href="https://oceanomedicina.com/programa-de-instituciones/" class="has-text-white is-underlined">comunicate con nosotros</a>.
+            <p class="has-text-white" style="position:relative;font-size: clamp(0.625rem,2vw,0.75rem);">Si queres formar parte de nuestra oferta, <a href="https://oceanomedicina.com/programa-de-instituciones/" class="has-text-white is-underlined">comunicate con nosotros</a>.
             </p>
         </div>
 
@@ -296,7 +363,7 @@
         <article class="aval-grid contenedor mx-auto">
             <div class="aval-grid-section section-left">
                 <div class="aval-img">
-                    <img src="media/avales/color/aval-colmed.png" alt="">
+                    <img src="media/avales/AEP_color.svg" alt="">
                 </div>
                 <div class="aval-info-extra">
                     <div class="aval-info-extra-overlay"></div>
@@ -356,7 +423,7 @@
                                 <div class="swiper-slide-info">
                                     <h4 class="aval-grid-info-title">Formate en gestión y administración en salud</h4>
                                     <h5>Inscribiéndote en el Curso <br> Superior de Gestión y <br> Administración Hospitalaria ó Curso Superior de Economía de <br> la Salud, accedés a una segunda formación a elección sin costo.</h5>
-                                    <a href="" class="btn btn-big">QUIERO SABER MÁS</a>
+                                    <a href="#anchor-form" class="btn btn-big">QUIERO SABER MÁS</a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -369,7 +436,7 @@
                                 <div class="swiper-slide-info">
                                     <h4>Formate en gestión y administración en salud</h4>
                                     <h5>Inscribiéndote en el Curso <br> Superior de Gestión y <br> Administración Hospitalaria ó Curso Superior de Economía de <br> la Salud, accedés a una segunda formación a elección sin costo.</h5>
-                                    <a href="" class="btn btn-big">QUIERO SABER MÁS</a>
+                                    <a href="#cta-asesor" class="btn btn-big">QUIERO SABER MÁS</a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -382,7 +449,7 @@
                                 <div class="swiper-slide-info">
                                     <h4>Formate en gestión y administración en salud</h4>
                                     <h5>Inscribiéndote en el Curso <br> Superior de Gestión y <br> Administración Hospitalaria ó Curso Superior de Economía de <br> la Salud, accedés a una segunda formación a elección sin costo.</h5>
-                                    <a href="" class="btn btn-big">QUIERO SABER MÁS</a>
+                                    <a href="#cta-asesor" class="btn btn-big">QUIERO SABER MÁS</a>
                                 </div>
                             </div>
 
@@ -605,6 +672,7 @@
         </section>
 
         <section id="cta-asesor" class="cta-asesor">
+            <div id="anchor-form"></div>
             <article class="cta-asesor-cont contenedor mx-auto">
                 <div class="cta-asesor-cont-info">
                     <div class="cta-asesor-cont-info-img" style="background: center/cover url(media/asesor.png);">
@@ -845,7 +913,37 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        const slider = document.querySelector('.filter-wrap');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mouseup', () => {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 3; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+            console.log(walk);
+        });
+    </script>
     <!----Slider Avalaes---->
     <script>
         const swiperAvales = new Swiper('.swiper-avales', {
@@ -864,6 +962,9 @@
                 disableOnInteraction: false,
             },
         });
+    </script>
+    <script>
+        AOS.init();
     </script>
 
 
