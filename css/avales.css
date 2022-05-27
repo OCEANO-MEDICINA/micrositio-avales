@@ -3766,11 +3766,11 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
     width: 100%;
     gap: 0.75rem;
     grid-template-columns: unset;
-    grid-auto-columns: 18%;
+    grid-auto-columns: 19.75%;
     grid-template-rows: 1fr 1fr;
   }
   .hero .avales-card {
-    height: clamp(3rem, 5vw, 6rem);
+    height: clamp(4rem, 6vw, 6rem);
   }
 
   .aval br {
@@ -3989,7 +3989,10 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
 
   .hero .avales-grid {
     grid-template-columns: unset;
-    grid-auto-columns: 18%;
+    grid-auto-columns: 19.75%;
+  }
+  .hero .avales-card {
+    height: clamp(4rem, 6vw, 7rem);
   }
 
   .aval-grid {
