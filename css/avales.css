@@ -3210,7 +3210,7 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
 .hero .avales-grid {
   width: calc(100% + 2rem);
   display: grid;
-  grid-auto-columns: clamp(7.375rem, 15vw, 9.75rem);
+  grid-auto-columns: clamp(9.5rem, 15vw, 12.75rem);
   grid-column-end: end;
   grid-auto-flow: column;
   gap: 0.5rem;
@@ -3221,7 +3221,7 @@ header .navbar .nav-contenidos.is-hoverable:focus .navbar-dropdown {
   justify-content: center;
   align-items: center;
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
-  height: clamp(4rem, 15vw, 5rem);
+  height: 5rem;
   cursor: pointer;
   scroll-snap-align: start;
 }
